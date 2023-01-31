@@ -21,6 +21,10 @@ println("langs:", langs)
 ```golang
 locales, err := default_lang.DetectLocale()
 println("locales:", locales)
+if err != nil {
+    matcher := language.NewMatcher([]language.Tag{language.English, language.Chinese})
+    tag, _ := language.MatchStrings(matcher, locales...)
+}
 ```
 
 ## How
