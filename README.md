@@ -19,8 +19,8 @@ println("langs:", langs)
 - [language designator]-[script designator]_[region designator], like: zh-Hans_CN 
 
 ```golang
-langs, err := default_lang.DetectLang()
-println("langs:", langs)
+locales, err := default_lang.DetectLocale()
+println("locales:", locales)
 ```
 
 ## How
