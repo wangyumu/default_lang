@@ -13,6 +13,7 @@ func DetectLang() ([]string, error) {
 }
 
 // DetectLocale return user default locales, like: zh_CN or zh-Hans_CN (darwin)
+// See: https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html
 func DetectLocale() ([]string, error) {
 	return getDefaultLocales()
 }
