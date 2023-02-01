@@ -6,7 +6,7 @@ func DetectLang() ([]string, error) {
 	if err != nil {
 		return nil, err
 	}
-	for i, _ := range locales {
+	for i := range locales {
 		locales[i] = locales[i][0:2] // first two lowercase letters languages (ISO 639-1)
 	}
 	return locales, nil
